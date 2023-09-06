@@ -1,9 +1,14 @@
 import React from 'react';
 
-const MovieCard = () => {
+const MovieCard = (props) => {
+    const {data} = props;
     return (
-        <div>
-            MovieCard
+        <div className='card-item'>
+            <div className='card-inner'>
+                <div className='card-top'>
+                     <img alt={data.poster}></img>
+                </div>
+            </div>
         </div>
     );
 };

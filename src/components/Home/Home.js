@@ -18,7 +18,7 @@ const Home = () => {
         dispatch(addMovies(response.data))
       }
         fetchMovies();
-    },[]);
+    },[dispatch]);
     return (
         <div>
         <div className='baner-img'></div>
